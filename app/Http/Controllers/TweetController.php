@@ -93,7 +93,7 @@ class TweetController extends Controller
         // ページネーションを追加（1ページに10件表示）
         $tweets = $query
             ->latest()
-        ->paginate(10);
+            ->paginate(10);
 
         return view('tweets.search', compact('tweets'));
     }
